@@ -67,6 +67,8 @@ class GroupsController < ApplicationController
     else
       flash[:warning] = "You are not the member of this board"
     end
+
+    redirect_to group_path(@group)
   end
 
   private
